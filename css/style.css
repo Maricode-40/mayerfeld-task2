@@ -1,23 +1,21 @@
-/* === RESET BÁSICO === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   width: 100%;
 }
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/* === HEADER === */
 header {
-  background-color: #1f2937; /* fondo oscuro */
+  background-color: #1f2937;
   width: 100%;
 }
 
-/* === NAVBAR === */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +24,7 @@ header {
   width: 100%;
 }
 .logo-img {
-  height: 56px;
+  height: clamp(45px, 6vw, 95px);
   width: auto;
   display: block;
 }
@@ -44,7 +42,6 @@ header {
   color: #ffffff;
 }
 
-/* === HERO === */
 .hero-content {
   display: flex;
   align-items: center;
@@ -56,8 +53,8 @@ header {
 }
 .hero-text {
   display: flex;
-  flex-direction: column; /* h1, p y botón uno debajo del otro */
-  max-width: 50%;         /* controla la columna izquierda */
+  flex-direction: column;
+  max-width: 50%;
 }
 .hero-text h1 {
   font-size: 48px;
@@ -70,17 +67,19 @@ header {
   color: #e5e7eb;
   margin: 0 0 30px;
 }
+
 #free-consult {
-  display: inline-block;   /* solo ocupa lo que mide el contenido */
-  background: #3882F6;
+  display: inline-block;
+  background: #3882f6;
   color: #fff;
   font-weight: 600;
   font-size: 18px;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: 7px;
   text-decoration: none;
-  width: auto;             
-  max-width: fit-content;  
+  width: auto;
+  max-width: fit-content;
+  transition: ease-in-out 0.2s;
 }
 
 #free-consult:hover {
@@ -93,7 +92,6 @@ header {
   height: auto;
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
   .nav-links {
     gap: 12px;
@@ -127,4 +125,10 @@ header {
     align-items: center;
     gap: 10px;
   }
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 25px;
 }
