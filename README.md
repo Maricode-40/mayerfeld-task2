@@ -1,5 +1,5 @@
-## Project Overview: Professional Staffing Agency Website
-This project is a fully responsive website designed for a professional staffing agency, built entirely with vanilla HTML and CSS—no frameworks, libraries, or JavaScript involved.
+## Project Overview: Professional Event Agency Website
+This project is a fully responsive website designed for a Professional Event and Staffing Agency, built entirely with vanilla HTML and CSS—no frameworks, libraries, or JavaScript involved.
 
 # Key Features
 Multi-page layout (3–5 pages) including Home, About Us, Services, Contact, and Careers
@@ -18,8 +18,8 @@ Semantic HTML structure for accessibility and SEO
 No external libraries or frameworks—purely handcrafted code
 
 ## Contributors
-Marissa Rico - Developer
-Shalom Alalade - Developer
+- Marissa Rico - Developer
+- Shalom Alalade - Developer
 
 # CSS Styling Set up
 <p>
