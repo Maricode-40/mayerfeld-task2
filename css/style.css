@@ -1,14 +1,13 @@
-
-/* body {
-  margin: 0;
-  font-family: "roboto", sans-serif;
-  background-color: #f3f4f6;
+header .navbar {
+  background-color: #1f2937; /* dark navy/gray */
+  padding: 40px;
 }
 
-.header {
-  background-color: #1f2937;
-  color: white;
-  padding: 20px 60px;
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+  display: block;
 }
 
 .navbar {
@@ -17,11 +16,19 @@
   align-items: center;
 }
 
-.logo {
-  font-size: 24px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.nav-links li {
   margin-left: 20px;
+  
 }
-*/
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
