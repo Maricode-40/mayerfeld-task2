@@ -16,19 +16,45 @@ header .navbar {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .logo-img {
+    max-height: 40px;
+  }
+}
+
 .nav-links {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
 }
 
 .nav-links li {
-  margin-left: 20px;
-  
+  margin: 5px 0;
 }
 .nav-links a {
+  color: #e5e7eb;
+  font-size: 18px;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  margin-left: 20px;
 }
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 60px 20px;
+  gap: 40px;
+  color: #f9faf8;       
+} */
+
