@@ -550,14 +550,14 @@ section address p {
   }
 }
 
-/* Services section: light */
+
 section:not(.hero-content) {
   background-color: #fff; 
   color: #1f2937; 
   padding: 60px 20px;
 }
 
-/* Services list styling */
+
 .services-list dt {
   font-weight: bold;
   margin-top: 15px;
