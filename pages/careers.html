@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shalom Alalade, Marissa Rico" >
+    <meta name="description" content="Professional Event and Staffing Agency website built with vanilla HTML and CSS" >
+    <meta name="keywords" content="events, staffing agency, shows, decoration, ushers, recruitment">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icons" href="./images/" type="images/png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title> get-a-free-consultation </title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="../index.html">
+          <img
+            class="logo-img"
+            src="../images/logo-perfect.png"
+            alt="Company Logo for Marissa and Shalom Event and Staffing Agency"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./our-work.html">Our Work</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="hero-content">
+          <img src="" alt="company-logo" title="Logo for job employment">
+          <section class="hero-section">
+            <h1>Join Our Team</h1>
+            <p>We’re always looking for passionate creatives to grow with us.</p>
+            <form>
+                <fieldset>
+                    <legend> Personal Information </legend>
+                    <br>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" aria-required ="true">
+                    <br><br>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" aria-required="true">
+                    <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" aria-required="true">
+                    <br><br>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" aria-required="true">
+                    <br><br>
+                    <label for="city">City</label>
+                    <input type="text" id="city" aria-required="true">
+                    <br><br>
+                </fieldset>
+                <fieldset> 
+                    <label for ="job-position"> Select Job Postiton</label>
+                    <select id="job-position" name="job-position" required>
+                    <option value=""> Please select an option </option>
+                    <option value="logisticOfficer"> Logistic Officer </option>
+                    <option value="schdedulingAssistant"> Scheduling Assistant </option>
+                    <option value="retreatPlanner"> Retreat Planner </option>
+                    <option value="guestRelationsOfficer"> Guest Relations Officer</option>
+                    <option value="conciergeStaff">Concierge Staff  </option>
+                    <option value=""> Event Stylist </option>
+                    <option value=""> Decor Assistant </option>
+                    <option value=""> Set Designer </option>
+                    <option value=""> AV Technician </option>
+                    <option value=""> Lighting Crew </option>
+                    <option value=""> Hospitality & Catering </option>
+                    <option value=""> Waitstaff </option>
+                    <option value=""> Line Cook </option>
+                    <option value=""> Equipment Handler </option>
+                    <option value=""> Driver </option>
+                    <option value="">  Warehouse Assistant</option>
+                    <option value=""> Administrative Officer </option>
+                    <option value=""> Event Sales Executive </option>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend> Documents </legend>
+                    <br><br>
+                    <label for="resume">Upload Your Resume</label>
+                    <br><br>
+                    <input type="file" id="resume" name="document" required>
+                    <br>
+                    <label for="photo">Upload Your Professional Photo</label><br><br>
+                    <input type="file" id="photo" name="photograph" accept="image/*" required>
+                </fieldset>
+                <button type="submit"> Submit </button>
+            </form>
+        
+      </section>
+    </header>
+  </main>
+  </body>
+  <footer>
+    <p> &copy; Marissa and Shalom 2025  </p>
+  </footer>
+  </html>
