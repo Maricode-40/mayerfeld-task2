@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   width: 100%;
-}
-body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -42,6 +40,29 @@ header {
   color: #ffffff;
 }
 
+.secondary-navs-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secondary-navs-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #9ca3af;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.secondary-navs-links a:hover {
+  color: ffffff;
+  border-bottom: 2px solid #3882f6;
+}
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -68,10 +89,17 @@ header {
   margin: 0 0 30px;
 }
 
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+}
+
 #free-consult {
   display: inline-block;
   background: #3882f6;
-  color: #fff;
+  color: #e5e7eb;
   font-weight: 600;
   font-size: 18px;
   padding: 12px 24px;
@@ -280,4 +308,263 @@ h2 {
   font-size: 16px;
   padding: 20px;
   margin-top: 40px;
+}
+
+.crew-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.crew-members li {
+  flex: 1 1 220px;
+  max-width: 240px;
+}
+
+.crew-members img {
+  width: 120%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: linear-gradient(135deg, #1f2937, #1f2937);
+  border-radius: 50%;
+  border: 3px solid #3882f6;
+  transition: transform 200ms ease;
+}
+
+.crew-members img:hover {
+  transform: scale(1.05);
+}
+
+section address {
+  line-height: 1.6;
+  margin-top: 15px;
+  color: #1f2937;
+}
+
+section address a {
+  color: #3882f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+section address a:hover {
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+section address p {
+  margin: 10px 0;
+}
+
+.core-values {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.core-values li {
+  flex: 1 1 calc(33% - 30px); /* 3 per row on desktop */
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  position: relative;
+  padding-left: 20px;
+}
+
+.core-values li::before {
+  content: "🚀 ";
+  position: absolute;
+  left: 0;
+}
+/* Section Title */
+#job-application-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+/* Intro text under heading */
+.form-intro {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #374151; /* softer gray for body text */
+  line-height: 1.6;
+}
+
+/* Form wrapper */
+.job-application-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Fieldsets */
+.job-application-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-application-form legend {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Labels */
+.job-application-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Inputs, Select, Textarea */
+.job-application-form input,
+.job-application-form select,
+.job-application-form textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.job-application-form input:focus,
+.job-application-form select:focus,
+.job-application-form textarea:focus {
+  border-color: #3882f6;
+  box-shadow: 0 0 0 2px rgba(56, 130, 246, 0.2);
+  outline: none;
+}
+
+/* File input */
+.job-application-form input[type="file"] {
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* Submit button */
+.job-application-form button {
+  background: #3882f6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.job-application-form button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .job-application-form {
+    padding: 15px;
+  }
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9faf8;
+  color: #1f2937;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 30px;
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.work-gallery li {
+  flex: 1 1 calc(25% - 15px); /* 4 per row on desktop */
+  max-width: 280px;
+}
+
+.work-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .work-gallery li {
+    flex: 1 1 calc(50% - 15px); /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .work-gallery li {
+    flex: 1 1 100%; /* 1 per row */
+  }
+}
+
+/* Services section: light */
+section:not(.hero-content) {
+  background-color: #fff; /* light background */
+  color: #1f2937; /* dark text */
+  padding: 60px 20px;
+}
+
+/* Services list styling */
+.services-list dt {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #111827;
+}
+
+.services-list dd {
+  margin: 0 0 15px 0;
+  color: #4b5563; /* softer gray */
 }
