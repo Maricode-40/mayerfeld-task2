@@ -42,6 +42,29 @@ header {
   color: #ffffff;
 }
 
+.secondary-navs-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secondary-navs-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #9ca3af;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.secondary-navs-links a:hover {
+  color: ffffff;
+  border-bottom: 2px solid #3882f6;
+}
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -66,6 +89,13 @@ header {
   font-size: 18px;
   color: #e5e7eb;
   margin: 0 0 30px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
 }
 
 #free-consult {
@@ -280,4 +310,83 @@ h2 {
   font-size: 16px;
   padding: 20px;
   margin-top: 40px;
+}
+
+.crew-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.crew-members li {
+  flex: 1 1 220px;
+  max-width: 240px;
+}
+
+.crew-members img {
+  width: 120%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: linear-gradient(135deg, #1f2937, #1f2937);
+  border-radius: 50%;
+  border: 3px solid #3882f6;
+  transition: transform 200ms ease;
+}
+
+.crew-members img:hover {
+  transform: scale(1.05);
+}
+
+section address {
+  line-height: 1.6;
+  margin-top: 15px;
+  color: #1f2937;
+}
+
+section address a {
+  color: #3882f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+section address a:hover {
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+section address p {
+  margin: 10px 0;
+}
+
+.core-values {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.core-values li {
+  flex: 1 1 calc(33% - 30px); /* 3 per row on desktop */
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  position: relative;
+  padding-left: 20px;
+}
+
+.core-values li::before {
+  content: "🚀 ";
+  position: absolute;
+  left: 0;
+}
+
+.hero-title {
+  font-size: 58px;
+  margin-top: 45px;
 }
