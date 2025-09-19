@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Shalom Alalade, Marissa Rico" >
-    <meta name="description" content="Professional Event and Staffing Agency website built with vanilla HTML and CSS" >
-    <meta name="keywords" content="events, staffing agency, shows, decoration, ushers, recruitment">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icons" href="./images/" type="images/png">
-    <link rel="stylesheet" href="./css/style.css" />
-    <title> get-a-free-consultation </title>
+    <meta name="author" content="Shalom Alalade, Marissa Rico" />
+    <meta
+      name="description"
+      content="Professional Event and Staffing Agency website built with vanilla HTML and CSS"
+    />
+    <meta
+      name="keywords"
+      content="events, staffing agency, shows, decoration, ushers, recruitment"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icons" href="./images/" type="images/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>get-a-free-consultation</title>
   </head>
   <body>
     <header>
@@ -29,74 +38,88 @@
           <li><a href="./our-work.html">Our Work</a></li>
         </ul>
       </nav>
-      <main>
-        <section class="hero-content">
-          <img src="" alt="company-logo" title="Logo for job employment">
-          <section class="hero-section">
-            <h1>Join Our Team</h1>
-            <p>We’re always looking for passionate creatives to grow with us.</p>
-            <form>
-                <fieldset>
-                    <legend> Personal Information </legend>
-                    <br>
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" aria-required ="true">
-                    <br><br>
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" aria-required="true">
-                    <br><br>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" aria-required="true">
-                    <br><br>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" id="phoneNumber" aria-required="true">
-                    <br><br>
-                    <label for="city">City</label>
-                    <input type="text" id="city" aria-required="true">
-                    <br><br>
-                </fieldset>
-                <fieldset> 
-                    <label for ="job-position"> Select Job Postiton</label>
-                    <select id="job-position" name="job-position" required>
-                    <option value=""> Please select an option </option>
-                    <option value="logisticOfficer"> Logistic Officer </option>
-                    <option value="schdedulingAssistant"> Scheduling Assistant </option>
-                    <option value="retreatPlanner"> Retreat Planner </option>
-                    <option value="guestRelationsOfficer"> Guest Relations Officer</option>
-                    <option value="conciergeStaff">Concierge Staff  </option>
-                    <option value=""> Event Stylist </option>
-                    <option value=""> Decor Assistant </option>
-                    <option value=""> Set Designer </option>
-                    <option value=""> AV Technician </option>
-                    <option value=""> Lighting Crew </option>
-                    <option value=""> Hospitality & Catering </option>
-                    <option value=""> Waitstaff </option>
-                    <option value=""> Line Cook </option>
-                    <option value=""> Equipment Handler </option>
-                    <option value=""> Driver </option>
-                    <option value="">  Warehouse Assistant</option>
-                    <option value=""> Administrative Officer </option>
-                    <option value=""> Event Sales Executive </option>
-                    <br>
-                </fieldset>
-                <fieldset>
-                    <legend> Documents </legend>
-                    <br><br>
-                    <label for="resume">Upload Your Resume</label>
-                    <br><br>
-                    <input type="file" id="resume" name="document" required>
-                    <br>
-                    <label for="photo">Upload Your Professional Photo</label><br><br>
-                    <input type="file" id="photo" name="photograph" accept="image/*" required>
-                </fieldset>
-                <button type="submit"> Submit </button>
-            </form>
-        
-      </section>
     </header>
-  </main>
+    <main>
+      <section class="hero-content">
+        <h1>Join Our Team</h1>
+        <p>We’re always looking for passionate creatives to grow with us.</p>
+      </section>
+      <section aria-labelledby="job-application-title">
+        <h2 id="job-application-title">Job Application Form</h2>
+        <p class="form-intro">
+          Fill in your details to apply for our open positions. Our team will
+          review your application and get in touch with you shortly.
+        </p>
+
+        <form class="job-application-form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Job Information</legend>
+            <label for="job-position">Select Job Position</label>
+            <select id="job-position" name="job-position" required>
+              <option value="">Please select an option</option>
+              <option value="logisticOfficer">Logistic Officer</option>
+              <option value="schedulingAssistant">Scheduling Assistant</option>
+              <option value="retreatPlanner">Retreat Planner</option>
+              <option value="guestRelationsOfficer">
+                Guest Relations Officer
+              </option>
+              <option value="conciergeStaff">Concierge Staff</option>
+              <option value="eventStylist">Event Stylist</option>
+              <option value="decorAssistant">Decor Assistant</option>
+              <option value="setDesigner">Set Designer</option>
+              <option value="avTechnician">AV Technician</option>
+              <option value="lightingCrew">Lighting Crew</option>
+              <option value="hospitalityCatering">
+                Hospitality & Catering
+              </option>
+              <option value="waitstaff">Waitstaff</option>
+              <option value="lineCook">Line Cook</option>
+              <option value="equipmentHandler">Equipment Handler</option>
+              <option value="driver">Driver</option>
+              <option value="warehouseAssistant">Warehouse Assistant</option>
+              <option value="administrativeOfficer">
+                Administrative Officer
+              </option>
+              <option value="eventSalesExecutive">Event Sales Executive</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Documents</legend>
+            <label for="resume">Upload Your Resume</label>
+            <input type="file" id="resume" name="resume" required />
+            <label for="photo">Upload Your Professional Photo</label>
+            <input
+              type="file"
+              id="photo"
+              name="photo"
+              accept="image/*"
+              required
+            />
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
   </body>
-  <footer>
-    <p> &copy; Marissa and Shalom 2025  </p>
+  <footer class="site-footer">
+    <p>&copy; Marissa and Shalom 2025</p>
   </footer>
-  </html>
+</html>
