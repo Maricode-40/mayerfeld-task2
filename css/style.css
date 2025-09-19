@@ -99,7 +99,7 @@ header {
 #free-consult {
   display: inline-block;
   background: #3882f6;
-  color: #fff;
+  color: #e5e7eb;
   font-weight: 600;
   font-size: 18px;
   padding: 12px 24px;
@@ -383,12 +383,6 @@ section address p {
   position: absolute;
   left: 0;
 }
-
-.hero-title {
-  font-size: 58px;
-  margin-top: 45px;
-}
-
 /* Section Title */
 #job-application-title {
   text-align: center;
@@ -493,4 +487,84 @@ section address p {
   .job-application-form {
     padding: 15px;
   }
+}
+
+.hero-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9faf8;
+  color: #1f2937;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 30px;
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.work-gallery li {
+  flex: 1 1 calc(25% - 15px); /* 4 per row on desktop */
+  max-width: 280px;
+}
+
+.work-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .work-gallery li {
+    flex: 1 1 calc(50% - 15px); /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .work-gallery li {
+    flex: 1 1 100%; /* 1 per row */
+  }
+}
+
+/* Services section: light */
+section:not(.hero-content) {
+  background-color: #fff; /* light background */
+  color: #1f2937; /* dark text */
+  padding: 60px 20px;
+}
+
+/* Services list styling */
+.services-list dt {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #111827;
+}
+
+.services-list dd {
+  margin: 0 0 15px 0;
+  color: #4b5563; /* softer gray */
 }
