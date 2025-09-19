@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
+
 body {
   width: 100%;
-}
-body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -389,4 +387,110 @@ section address p {
 .hero-title {
   font-size: 58px;
   margin-top: 45px;
+}
+
+/* Section Title */
+#job-application-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+/* Intro text under heading */
+.form-intro {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #374151; /* softer gray for body text */
+  line-height: 1.6;
+}
+
+/* Form wrapper */
+.job-application-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Fieldsets */
+.job-application-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-application-form legend {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Labels */
+.job-application-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Inputs, Select, Textarea */
+.job-application-form input,
+.job-application-form select,
+.job-application-form textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state */
+.job-application-form input:focus,
+.job-application-form select:focus,
+.job-application-form textarea:focus {
+  border-color: #3882f6;
+  box-shadow: 0 0 0 2px rgba(56, 130, 246, 0.2);
+  outline: none;
+}
+
+/* File input */
+.job-application-form input[type="file"] {
+  padding: 6px;
+  font-size: 14px;
+}
+
+/* Submit button */
+.job-application-form button {
+  background: #3882f6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.job-application-form button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .job-application-form {
+    padding: 15px;
+  }
 }
