@@ -90,6 +90,7 @@ header {
   border-radius: 6px;
   object-fit: cover;
   height: auto;
+  opacity: 0.4;
 }
 
 @media (max-width: 768px) {
