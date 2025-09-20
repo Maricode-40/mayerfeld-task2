@@ -173,10 +173,15 @@ h2 {
   margin: 0 auto;
 }
 
+.card-list li:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
 .card-list li {
   flex: 1 1 calc(25% - 20px);
   max-width: 250px;
   text-align: center;
+  transition: all 150ms ease-in-out;
 }
 
 .image-box {
@@ -596,4 +601,41 @@ section:not(.hero-content) {
 
 .work {
   padding-bottom: 30px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+section[aria-labelledby="job-application-title"] {
+  background: url("..//images/teambuilding.jpg") no-repeat center center/cover;
+  padding: 60px 20px;
+  position: relative;
+  
+}
+
+section[aria-labelledby="job-application-title"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* overlay oscuro */
+  z-index: 0;
+}
+
+/* Aseguramos que todo el contenido del form esté por encima */
+section[aria-labelledby="job-application-title"] h2,
+section[aria-labelledby="job-application-title"] p,
+.job-application-form {
+  position: relative;
+  z-index: 1;
+}
+
+/* El formulario necesita un fondo */
+.job-application-form {
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto; /* centrado */
 }
