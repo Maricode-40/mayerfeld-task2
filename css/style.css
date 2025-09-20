@@ -217,25 +217,25 @@ h2 {
 }
 
 .testimonial {
-  max-width: 900px;
-  margin: 60px auto;
+  max-width: 100%;
+  margin: 40px auto;
   padding: 40px 30px;
   background: #e5e7eb;
-  border-radius: 8px;
   text-align: center;
 }
 
 .testimonial blockquote {
   margin: 0;
-  font-size: italic;
+  font-size: 36px;
+  font-style: italic;
   font-weight: 300;
   color: #1f2937;
+  line-height: 1.5;
 }
 
 .testimonial h4 {
   margin-top: 20px;
   text-align: right;
-  font-size: bold;
   color: #1f2937;
 }
 
@@ -577,16 +577,16 @@ section:not(.hero-content) {
 }
 
 .footer-nav ul {
-  list-style: none;   /* removes dots */
+  list-style: none; /* removes dots */
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;          /* space between links */
+  gap: 20px; /* space between links */
 }
 
 .footer-nav a {
-  color: #ffffff;     /* makes links white */
+  color: #ffffff; /* makes links white */
   text-decoration: none;
   font-size: 14px;
 }
