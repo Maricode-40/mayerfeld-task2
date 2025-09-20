@@ -305,7 +305,7 @@ h2 {
   color: #e5e7eb;
   text-align: center;
   font-size: 16px;
-  padding: 20px;
+  padding: 30px;
   margin-top: 40px;
 }
 
@@ -595,8 +595,8 @@ section:not(.hero-content) {
 }
 
 .careers-title {
-  margin-top: 20px;
-  margin-left: 30px;
+  margin: 1rem;
+  text-align: center;
 }
 
 .work {
@@ -613,7 +613,6 @@ section[aria-labelledby="job-application-title"] {
   background: url("..//images/teambuilding.jpg") no-repeat center center/cover;
   padding: 60px 20px;
   position: relative;
-  
 }
 
 section[aria-labelledby="job-application-title"]::before {
@@ -630,12 +629,5 @@ section[aria-labelledby="job-application-title"] p,
 .job-application-form {
   position: relative;
   z-index: 1;
-}
-
-/* El formulario necesita un fondo */
-.job-application-form {
-  border-radius: 8px;
-  padding: 30px;
-  max-width: 600px;
-  margin: 0 auto; /* centrado */
+  color: white;
 }
