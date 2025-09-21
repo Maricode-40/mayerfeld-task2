@@ -436,7 +436,6 @@ section address p {
   color: #1f2937;
 }
 
-
 .job-application-form input,
 .job-application-form select,
 .job-application-form textarea {
@@ -550,7 +549,6 @@ section address p {
   }
 }
 
-
 section:not(.hero-content) {
   background-color: #fff; 
   color: #1f2937; 
@@ -572,4 +570,30 @@ section:not(.hero-content) {
 #space-out > p {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.footer-nav {
+  background-color: #1f2937;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-nav ul {
+  list-style: none;   
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;         
+}
+
+.footer-nav a {
+  color: #ffffff;    
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline; 
 }
