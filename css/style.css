@@ -402,7 +402,7 @@ section address p {
   text-align: center;
 }
 .core-values li {
-  flex: 1 1 calc(33% - 30px); /* 3 per row on desktop */
+  flex: 1 1 calc(33% - 30px); 
   font-size: 18px;
   font-weight: 600;
   color: #1f2937;
@@ -415,24 +415,24 @@ section address p {
   position: absolute;
   left: 0;
 }
-/* Section Title */
+
 #job-application-title {
   text-align: center;
   font-size: 28px;
   margin-bottom: 15px;
 }
 
-/* Intro text under heading */
+
 .form-intro {
   max-width: 600px;
   margin: 0 auto 25px;
   text-align: center;
   font-size: 16px;
-  color: #374151; /* softer gray for body text */
+  color: #374151; 
   line-height: 1.6;
 }
 
-/* Form wrapper */
+
 .job-application-form {
   max-width: 600px;
   margin: 0 auto;
@@ -445,7 +445,7 @@ section address p {
   gap: 25px;
 }
 
-/* Fieldsets */
+
 .job-application-form fieldset {
   border: none;
   display: flex;
@@ -460,14 +460,13 @@ section address p {
   color: #1f2937;
 }
 
-/* Labels */
+
 .job-application-form label {
   font-size: 14px;
   font-weight: 600;
   color: #1f2937;
 }
 
-/* Inputs, Select, Textarea */
 .job-application-form input,
 .job-application-form select,
 .job-application-form textarea {
@@ -480,7 +479,7 @@ section address p {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Focus state */
+
 .job-application-form input:focus,
 .job-application-form select:focus,
 .job-application-form textarea:focus {
@@ -511,7 +510,7 @@ section address p {
   transform: translateY(-2px);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .job-application-form {
     padding: 15px;
@@ -547,7 +546,7 @@ section address p {
 }
 
 .work-gallery li {
-  flex: 1 1 calc(25% - 15px); /* 4 per row on desktop */
+  flex: 1 1 calc(25% - 15px); 
   max-width: 280px;
 }
 
@@ -565,21 +564,20 @@ section address p {
   cursor: pointer;
 }
 
-/* Tablet */
+
 @media (max-width: 1023px) {
   .work-gallery li {
-    flex: 1 1 calc(50% - 15px); /* 2 per row */
+    flex: 1 1 calc(50% - 15px); 
   }
 }
 
-/* Mobile */
+
 @media (max-width: 599px) {
   .work-gallery li {
-    flex: 1 1 100%; /* 1 per row */
+    flex: 1 1 100%; 
   }
 }
 
-/* Services section: light */
 section:not(.hero-content) {
   background-color: #fff;
   color: #1f2937;
@@ -626,8 +624,9 @@ section:not(.hero-content) {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px; /* space between links */
+  gap: 20px;         
 }
+
 
 .footer-nav a {
   color: #ffffff; /* makes links white */
@@ -636,7 +635,7 @@ section:not(.hero-content) {
 }
 
 .footer-nav a:hover {
-  text-decoration: underline; /* simple hover effect */
+  text-decoration: underline; 
 }
 
 .careers-title {

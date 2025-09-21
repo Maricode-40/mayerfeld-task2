@@ -1,5 +1,5 @@
 ## Project Overview: Professional Event Agency Website
-This project is a fully responsive website designed for a Professional Event and Staffing Agency, built entirely with vanilla HTML and CSS—no frameworks, libraries, or JavaScript involved.
+This project is a fully responsive website designed for a Professional Event Management and Staffing Agency, built entirely with vanilla HTML and CSS—no frameworks, libraries, or JavaScript involved.
 
 # Key Features
 Multi-page layout (3–5 pages) including Home, About Us, Services, Our-Work
@@ -22,3 +22,6 @@ No external libraries or frameworks—purely handcrafted code
 - Shalom Alalade - Developer
 
 ## Future Improvements
+
+
+Live Link: https://maricode-40.github.io/mayerfeld-task2/
