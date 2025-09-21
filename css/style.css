@@ -305,8 +305,8 @@ h2 {
   color: #e5e7eb;
   text-align: center;
   font-size: 16px;
-  padding: 30px;
-  margin-top: 40px;
+  padding: 10px;
+  margin-top: 26px;
 }
 
 .crew-members {
@@ -387,7 +387,6 @@ section address p {
   text-align: center;
   font-size: 28px;
   margin-bottom: 15px;
-  color: #1f2937;
 }
 
 /* Intro text under heading */
@@ -457,13 +456,11 @@ section address p {
   outline: none;
 }
 
-/* File input */
 .job-application-form input[type="file"] {
   padding: 6px;
   font-size: 14px;
 }
 
-/* Submit button */
 .job-application-form button {
   background: #3882f6;
   color: #fff;
@@ -500,11 +497,11 @@ section address p {
   margin-bottom: 10px;
 }
 
-.hero-text p {
+/* .hero-text p {
   font-size: 1.2rem;
   color: #374151;
   margin-bottom: 30px;
-}
+} */
 
 .work-gallery {
   display: flex;
@@ -551,32 +548,48 @@ section address p {
 
 /* Services section: light */
 section:not(.hero-content) {
-  background-color: #fff; /* light background */
-  color: #1f2937; /* dark text */
+  background-color: #fff;
+  color: #1f2937;
   padding: 60px 20px;
 }
 
-/* Services list styling */
 .services-list dt {
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #111827;
+  border-left: 4px solid #3882f6;
+  padding-left: 10px;
 }
 
 .services-list dd {
-  margin: 0 0 15px 0;
-  color: #4b5563; /* softer gray */
+  margin: 0 0 20px 0;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.services-list dd:hover {
+  color: #111827;
+  background: #f3f4f6; /* light gray background */
+  border-radius: 4px;
+  padding: 5px;
+}
+
+
+.services-list {
+  max-width: 800px;
+  margin: 0 auto; /* center on page */
+  line-height: 1.6;
 }
 
 .footer-nav {
   background-color: #1f2937;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
 .footer-nav ul {
-  list-style: none; /* removes dots */
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
