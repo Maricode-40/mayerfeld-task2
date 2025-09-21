@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100%;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 header {
@@ -368,6 +368,7 @@ section address {
   line-height: 1.6;
   margin-top: 15px;
   color: #1f2937;
+  text-align: center;
 }
 
 section address a {
@@ -393,7 +394,13 @@ section address p {
   padding: 0;
   margin: 20px 0;
 }
+.core-values {
+  text-align: center;
+}
 
+.value-p {
+  text-align: center;
+}
 .core-values li {
   flex: 1 1 calc(33% - 30px); /* 3 per row on desktop */
   font-size: 18px;
@@ -637,6 +644,10 @@ section:not(.hero-content) {
   text-align: center;
 }
 
+.mission-color {
+  text-align: center;
+}
+
 .work {
   padding-bottom: 30px;
 }
@@ -645,6 +656,7 @@ section:not(.hero-content) {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: #111827;
 }
 
 section[aria-labelledby="job-application-title"] {
@@ -657,11 +669,10 @@ section[aria-labelledby="job-application-title"]::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* overlay oscuro */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
-/* Aseguramos que todo el contenido del form esté por encima */
 section[aria-labelledby="job-application-title"] h2,
 section[aria-labelledby="job-application-title"] p,
 .job-application-form {
