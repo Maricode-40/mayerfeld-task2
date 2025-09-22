@@ -387,6 +387,11 @@ h2 {
   transform: scale(1.05);
 }
 
+.crew-members p {
+  text-align: center;
+  margin: 20px;
+}
+
 section address {
   line-height: 1.6;
   margin-top: 15px;
