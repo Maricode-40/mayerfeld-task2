@@ -18,26 +18,28 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; 
   align-items: center;
-  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
 .logo-img {
   height: clamp(55px, 8vw, 110px);
   width: auto;
   display: block;
-  padding: 14px 20px;
-  margin-right: 2px;
+  margin-right: 10px;
+  object-fit: contain;
+  max-width: 220px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   gap: 20px;
-  height: clamp(55px, 8vw, 110px);
-  width: auto;
   margin-left: 5px;
+  padding: 0;
 }
 
 .nav-links a,
@@ -64,7 +66,7 @@ header {
 
 .dropdown-content {
   display: none;
-  position: sticky;
+  position: absolute; 
   top: 100%;
   left: 0;
   background-color: #1f2937;
@@ -81,20 +83,20 @@ header {
 
 .hero-content {
   display: flex;
+  flex-wrap: wrap; 
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 40px;
   background-color: #1f2937;
   padding: 60px 20px;
-  position: relative;
-  z-index: 1;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  padding: 0 40px;
+  flex: 1 1 50%; 
+  padding: 0 20px;
+  min-width: 280px;
 }
 
 .hero-text h1,
@@ -115,19 +117,14 @@ header {
 }
 
 .hero-placeholder {
-  width: clamp(260px, 40vw, 520px);
+  flex: 1 1 40%;
+  max-width: 500px;
+  width: 100%;
   border-radius: 6px;
   object-fit: cover;
   height: auto;
   opacity: 0.4;
   padding-right: 30px;
-}
-
-.hero-title {
-  font-size: 48px;
-  font-weight: 800;
-  color: #1f2937;
-  text-align: center;
 }
 
 #free-consult {
@@ -139,46 +136,49 @@ header {
   padding: 12px 24px;
   border-radius: 7px;
   text-decoration: none;
-  width: auto;
-  max-width: fit-content;
   transition: ease-in-out 0.2s;
+  width: fit-content;
 }
 
 #free-consult:hover {
   background: #2563eb;
 }
 
+/* Media Query for sizing tablets */
+@media (max-width: 1024px) {
+  .logo-img {
+    max-width: 180px;
+    height: auto;
+  }
+}
+
+/* Media Query for sizing smaller screens */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .nav-links {
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .nav-links a {
-    font-size: 16px;
-  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  .hero-text {
-    max-width: 100%;
-  }
+
+  .hero-text,
   .hero-placeholder {
-    width: 100%;
-    margin-top: 20px;
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0;
   }
-}
-@media (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  .logo-img {
-    height: 65px;
-  }
-  .nav-links {
-    align-items: center;
-    gap: 10px;
+
+  .hero-placeholder {
+    margin: 20px auto 0;
+    padding-right: 0;
   }
 }
 
@@ -188,7 +188,7 @@ h2 {
   padding: 25px;
 }
 
-.card-list {
+.card-list { 
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -198,39 +198,60 @@ h2 {
   list-style: none;
   margin: 0 auto;
 }
-
-.card-list li:hover {
-  filter: contrast(80%);
-  transform: scale(1.1);
-}
+/* homepage cards sizing */
 .card-list li {
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(25% - 20px); 
   max-width: 250px;
   text-align: center;
   transition: all 150ms ease-in-out;
 }
 
-.image-box {
+.card-list li:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
+
+/* sizing for tablets */
+@media (max-width: 900px) {
+  .card-list li {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 300px;
+  }
+}
+
+/* sizing for mobile*/
+@media (max-width: 600px) {
+  .card-list {
+    justify-content: center; 
+  }
+
+  .card-list li {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.image-box {    
   width: 100%;
-  aspect-ratio: 1 / 1; /* cuadrado */
+  aspect-ratio: 1 / 1; 
   border: 3px solid #3882f6;
   border-radius: 12px;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.image-box img {
+.image-box img { 
   width: 100%;
   height: 100%;
-  object-fit: conditional;
+  object-fit: cover; 
   display: block;
 }
 
-.card-text {
-  margin-top: 12px; /* espacio debajo de la imagen */
+.card-text { 
+  margin-top: 12px; 
 }
 
-.card-text p {
+.card-text p { 
   font-size: 14px;
   color: #374151;
   line-height: 1.4;
@@ -240,15 +261,15 @@ h2 {
   width: 100%;
   background: #e5e7eb;
   text-align: center;
-  padding: 80px 20px; /* aumentamos padding arriba y abajo */
+  padding: 80px 20px;
 }
 
 .testimonial blockquote {
-  margin: 0 auto 40px; /* espacio debajo del texto */
+  margin: 0 auto 40px;
   max-width: 900px;
   font-size: 36px;
   font-style: italic;
-  font-weight: 300; /* LIGHT */
+  font-weight: 300;
   color: #1f2937;
   line-height: 1.5;
   text-align: justify;
@@ -351,7 +372,8 @@ h2 {
 }
 
 .crew-members img {
-  width: 120%;
+  width: 100%; 
+  max-width: 240px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   background: linear-gradient(135deg, #1f2937, #1f2937);
@@ -386,6 +408,7 @@ section address p {
   margin: 10px 0;
 }
 
+/* core-values section of about page */
 .core-values {
   list-style: none;
   display: flex;
@@ -415,23 +438,21 @@ section address p {
   position: absolute;
   left: 0;
 }
-
+/* job-application-form of careers page*/
 #job-application-title {
   text-align: center;
   font-size: 28px;
   margin-bottom: 15px;
 }
 
-
 .form-intro {
   max-width: 600px;
   margin: 0 auto 25px;
   text-align: center;
   font-size: 16px;
-  color: #374151; 
+  color: #374151;
   line-height: 1.6;
 }
-
 
 .job-application-form {
   max-width: 600px;
@@ -444,7 +465,6 @@ section address p {
   flex-direction: column;
   gap: 25px;
 }
-
 
 .job-application-form fieldset {
   border: none;
@@ -459,7 +479,6 @@ section address p {
   margin-bottom: 10px;
   color: #1f2937;
 }
-
 
 .job-application-form label {
   font-size: 14px;
@@ -478,7 +497,6 @@ section address p {
   width: 100%;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
 
 .job-application-form input:focus,
 .job-application-form select:focus,
@@ -510,13 +528,13 @@ section address p {
   transform: translateY(-2px);
 }
 
-
 @media (max-width: 600px) {
   .job-application-form {
     padding: 15px;
   }
 }
 
+/* hero-section of  */
 .hero-section {
   text-align: center;
   padding: 40px 20px;
@@ -524,17 +542,25 @@ section address p {
   color: #1f2937;
 }
 
+/* Make sure .hero-content is a flex container so the media query above works */
+/* FIX: add minimal display:flex for the hero content (relies on your existing structure) */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-/* .hero-text p {
-  font-size: 1.2rem;
-  color: #374151;
-  margin-bottom: 30px;
-} */
+/* .hero-text p { ... } commented out in original */
 
+/* -----------------------
+   Work gallery (original)
+   ----------------------- */
 .work-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -546,7 +572,7 @@ section address p {
 }
 
 .work-gallery li {
-  flex: 1 1 calc(25% - 15px); 
+  flex: 1 1 calc(25% - 15px); /* 4 per row on desktop */
   max-width: 280px;
 }
 
@@ -564,13 +590,12 @@ section address p {
   cursor: pointer;
 }
 
-
+/* sizing of images on our-work page */
 @media (max-width: 1023px) {
   .work-gallery li {
     flex: 1 1 calc(50% - 15px); 
   }
 }
-
 
 @media (max-width: 599px) {
   .work-gallery li {
@@ -578,6 +603,7 @@ section address p {
   }
 }
 
+/*  services page */
 section:not(.hero-content) {
   background-color: #fff;
   color: #1f2937;
@@ -600,14 +626,14 @@ section:not(.hero-content) {
 
 .services-list dd:hover {
   color: #111827;
-  background: #f3f4f6; /* light gray background */
+  background: #f3f4f6;
   border-radius: 4px;
   padding: 5px;
 }
 
 .services-list {
   max-width: 800px;
-  margin: 0 auto; /* center on page */
+  margin: 0 auto;
   line-height: 1.6;
 }
 
@@ -624,18 +650,17 @@ section:not(.hero-content) {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;         
+  gap: 20px;
 }
 
-
 .footer-nav a {
-  color: #ffffff; /* makes links white */
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
 }
 
 .footer-nav a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .careers-title {
@@ -659,7 +684,7 @@ section:not(.hero-content) {
 }
 
 section[aria-labelledby="job-application-title"] {
-  background: url("..//images/teambuilding.jpg") no-repeat center center/cover;
+  background: url("../images/teambuilding.jpg") no-repeat center center/cover;
   padding: 60px 20px;
   position: relative;
 }
@@ -678,4 +703,71 @@ section[aria-labelledby="job-application-title"] p,
   position: relative;
   z-index: 1;
   color: white;
+}
+
+/* adjustment of logo brand and links positioning in nav bar */
+.navbar > a {
+  flex: 0 0 auto;    
+  display: block;    
+  max-width: none;   
+}
+
+.navbar > a img.logo-img,
+.logo-img {
+  display: block;
+  width: auto;           
+  height: auto;
+  max-height: 80px;     
+  max-width: 220px;      
+  object-fit: contain;   
+
+@media (max-width: 1024px) {
+  .navbar > a img.logo-img,
+  .logo-img {
+    max-height: 72px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar > a img.logo-img,
+  .logo-img {
+    max-height: 65px; 
+    max-width: 160px;
+  }
+}
+/* sizing for smaller screens */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;   
+    text-align: center;       
+    gap: 20px;
+  }
+
+  .hero-text {
+    flex: 1 1 100%;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  #free-consult {
+    margin: 0 auto;        
+    display: block;
+  }
+
+  .hero-placeholder {
+    flex: 1 1 auto;
+    max-width: 80%;
+    padding: 0;
+  }
+}
+
+/* adjusting heading in about page */
+.about-h1 {
+  font-family: Tahoma;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: center;
+
 }
